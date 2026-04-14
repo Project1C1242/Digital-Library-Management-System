@@ -14,7 +14,7 @@ public:
     LibraryItem();
     virtual ~LibraryItem();
 
-    virtual void displayinfo() const = 0;
+    virtual void displayInfo() const = 0;
 
     string getTitle();
     int getId();
