@@ -14,7 +14,6 @@ class LibraryItem
     virtual ~LibraryItem();
     
     virtual void displayinfo() const = 0;
-    virtual void getTitle();
     
     string getTitle();
     int getId();
