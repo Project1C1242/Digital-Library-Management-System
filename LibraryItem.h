@@ -11,7 +11,7 @@ protected:
     bool isAvaliable;
 
 public:
-    LibraryItem();
+    LibraryItem(string title, int id);
     virtual ~LibraryItem();
 
     virtual void displayInfo() const = 0;
@@ -19,4 +19,5 @@ public:
     string getTitle();
     int getId();
 };
+
 
