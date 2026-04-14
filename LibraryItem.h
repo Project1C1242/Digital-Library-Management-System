@@ -1,20 +1,22 @@
 #include <iostream>
 #include <vector>
 #include <string>
+using namespace std;
 
 class LibraryItem
 {
-  protected:
+protected:
     string title;
     int id;
     bool isAvaliable;
-  
-  public:
+
+public:
     LibraryItem();
     virtual ~LibraryItem();
-    
+
     virtual void displayinfo() const = 0;
-    
+
     string getTitle();
     int getId();
-}
+};
+
