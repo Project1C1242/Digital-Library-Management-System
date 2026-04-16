@@ -8,7 +8,8 @@ using namespace std;
 class Borrowable
 {
 	public:
-		void borrowItem();
-		void returnItem();
-};
+		virtual ~Borrowable() const = 0;
 
+		virtual void borrowItem() const = 0;
+		virtual void returnItem() const = 0;
+};
