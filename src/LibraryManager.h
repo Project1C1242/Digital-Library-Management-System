@@ -1,3 +1,4 @@
+#pragma once
 #ifndef LIBRARYMANAGER_H
 #define LIBRARYMANAGER_H
 #include <vector>
@@ -9,7 +10,7 @@ class LibraryManager{
 private: 
     vector<LibraryItem*> items;
 public: 
-    LibraryManager()
+    LibraryManager();
     void addItem(LibraryItem* item);
     void removeItem(int id);
     LibraryItem* findItem(int id);

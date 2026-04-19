@@ -1,15 +1,8 @@
-#include <iostream>
+#pragma once
 
-#include "Audiobook"
-#include "Book"
-
-using namespace std;
-
-class Borrowable
-{
-	public:
-		virtual ~Borrowable() {};
-
-		virtual void borrowItem() const = 0;
-		virtual void returnItem() const = 0;
+class Borrowable {
+public:
+    virtual void borrowItem() = 0;
+    virtual void returnItem() = 0;
+    virtual ~Borrowable() {}
 };

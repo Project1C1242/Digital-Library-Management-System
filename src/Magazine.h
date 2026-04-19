@@ -1,3 +1,4 @@
+#pragma once
 #include "LibraryItem.h"
 
 class Magazine : public LibraryItem {

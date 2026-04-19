@@ -1,13 +1,17 @@
 #include "LibraryItem.h"
 
-LibraryItem::LibraryItem(string title, int id) : title(title), id(id) {}
-    
-string LibraryItem::getTitle()
-{
-  return title;
-}
+LibraryItem::LibraryItem(string t, int i)
+    : title(t), id(i), isAvailable(true) {}
 
-int LibraryItem::getId()
-{
+string LibraryItem::getTitle() const { 
+  return title;
+ }
+int LibraryItem::getId() const { 
   return id;
+ }
+bool LibraryItem::getAvailability() const {
+   return isAvailable; 
+  }
+void LibraryItem::setAvailability(bool status) { 
+  isAvailable = status; 
 }

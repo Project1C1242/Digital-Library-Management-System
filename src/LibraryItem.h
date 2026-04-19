@@ -1,21 +1,21 @@
-#include <iostream>
-#include <vector>
+#pragma once
 #include <string>
 using namespace std;
 
-class LibraryItem
-{
+class LibraryItem {
 protected:
     string title;
     int id;
-    bool isAvaliable;
+    bool isAvailable;
 
 public:
-    LibraryItem(string title, int id);
-    virtual ~LibraryItem();
+    LibraryItem(string t, int i);
+    virtual ~LibraryItem() {}
+
+    string getTitle() const;
+    int getId() const;
+    bool getAvailability() const;
+    void setAvailability(bool status);
 
     virtual void displayInfo() const = 0;
-
-    string getTitle();
-    int getId();
 };

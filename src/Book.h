@@ -1,3 +1,4 @@
+#pragma once
 #include "LibraryItem.h"
 #include "Borrowable.h"
 
